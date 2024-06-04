@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+body {
+  background: hsl(30, 38%, 92%);
+  font: 100% "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.card {
+  background: hsl(0, 0%, 100%);
+  border-radius: 1em;
+}
+
+.card-img {
+  width: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.card-description {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.category {
+  margin: 0%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.card-title {
+  font: 100% "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+  color: hsl(212, 21%, 14%);
+}
+
+.card-text {
+  line-height: 1.5em;
+}
+
+.discountprice {
+  font: 100% "Fraunces", sans-serif;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: xx-large;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font: 70% "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: small;
+  padding-left: 1.5em;
+}
+
+button {
+  font: 70% "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  border: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:active {
+  background-color: hsl(159, 37%, 18%);
+  cursor: pointer;
+}
+
+.button-img {
+  padding-right: 1em;
+}
+
+.attribution {
+  font: 70% "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(158, 36%, 37%);
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+$color-background: hsl(30, 38%, 92%);
+$color-text: hsl(228, 12%, 48%);
+$color-title: hsl(212, 21%, 14%);
+$color-link: hsl(158, 36%, 37%);
+$color-button: hsl(0, 0%, 100%);
+$color-background-card: hsl(0, 0%, 100%);
+$color-background-button: hsl(158, 36%, 37%);
+$font-text: 'Montserrat', sans-serif;
+$font-title: 'Fraunces', sans-serif;
+$font-weight-bold: 700;
+$font-weight-light: 500;
+$align-text: center;
+$border-radius: 1em;
+$padding-small: 0.5em;
+$padding-medium: 1em;
+$padding-large: 1.5em;
+
+body {
+  background: $color-background;
+  font: 100% $font-text;
+  font-weight:$font-weight-light;
+  color: $color-text;
+  padding-top: $padding-medium;
+  padding-left: $padding-small;
+  padding-right: $padding-small;
+}
+
+.card {
+  background: $color-background-card;
+  border-radius: $border-radius;
+}
+
+.card-img {
+  width: 100%;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.card-description {
+  padding-top: $padding-medium;
+  padding-bottom: $padding-medium;
+  padding-left: $padding-large;
+  padding-right: $padding-large;
+}
+
+.category {
+  margin: 0%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+ 
+.card-title {
+  font: 100% $font-title;
+  font-weight:$font-weight-bold;
+  font-size: xx-large;
+  color: $color-title;
+}
+
+.card-text {
+  line-height: $padding-large;
+}
+
+.discountprice {
+  font: 100% $font-title;
+  color: $color-link;
+  font-weight: $font-weight-bold;
+  font-size: xx-large;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font: 70% $font-text;
+  color: $color-text;
+  text-decoration: line-through;
+  font-weight: $font-weight-light;
+  font-size: small;
+  padding-left: $padding-large;
+}
+
+button {
+  font: 70% $font-text;
+  font-weight:$font-weight-bold;
+  background-color: $color-background-button;
+  color: $color-button;
+  width: 100%;
+  border: none;
+  padding-top: $padding-medium;
+  padding-bottom: $padding-medium;
+  border-radius:  1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:active {
+  background-color: hsl(159, 37%, 18%);
+  cursor:pointer;
+}
+
+.button-img {
+  padding-right: $padding-medium;
+}
+
+.attribution {
+  font: 70% $font-text;
+  text-align: $align-text;
+}
+
+.attribution a {
+  color: $color-link;
+}
