@@ -35,6 +35,7 @@ Users should be able to:
 ### Built with
 - HTML
 - Sass
+- Flexbox
 - Mobile-first workflow
 
 ### Useful resources
@@ -42,6 +43,9 @@ Users should be able to:
 - [Install Sass](https://sass-lang.com/install/) - Installation guide, documentation and more. I installed via npm.
 - I used Live Sass Compiler - A VSCode Extension that helps to compile/transpile SASS/SCSS files to CSS at real-time.
 - [Sass variable naming tips](https://webdesign.tutsplus.com/quick-tip-name-your-sass-variables-modularly--webdesign-13364a)
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+
 
 
 ## Author

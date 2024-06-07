@@ -23,27 +23,27 @@ body {
   font: 100% $font-text;
   font-weight:$font-weight-light;
   color: $color-text;
-  padding-top: $padding-medium;
-  padding-left: $padding-small;
-  padding-right: $padding-small;
+  padding-block: $padding-medium;
+  padding-inline: $padding-small;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background: $color-background-card;
   border-radius: $border-radius;
 }
 
 .card-img {
+  content:url('images/image-product-mobile.jpg');
   width: 100%;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
 }
 
 .card-description {
-  padding-top: $padding-medium;
-  padding-bottom: $padding-medium;
-  padding-left: $padding-large;
-  padding-right: $padding-large;
+  padding-block: $padding-medium;
+  padding-inline: $padding-large;
 }
 
 .category {
@@ -55,21 +55,21 @@ body {
 .card-title {
   font: 100% $font-title;
   font-weight:$font-weight-bold;
-  font-size: xx-large;
+  font-size: 2em;
   color: $color-title;
 }
 
 .card-text {
-  line-height: $padding-large;
+  line-height: 1.5em;
+  font-size: 1em;
 }
 
 .discountprice {
   font: 100% $font-title;
   color: $color-link;
   font-weight: $font-weight-bold;
-  font-size: xx-large;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  font-size: 2em;
+  margin-block: 0.5em;
   display: flex;
   align-items: center;
 }
@@ -79,24 +79,25 @@ body {
   color: $color-text;
   text-decoration: line-through;
   font-weight: $font-weight-light;
-  font-size: small;
+  font-size: 0.5em;
   padding-left: $padding-large;
 }
 
 button {
   font: 70% $font-text;
   font-weight:$font-weight-bold;
+  font-size: 1em;
   background-color: $color-background-button;
   color: $color-button;
   width: 100%;
   border: none;
-  padding-top: $padding-medium;
-  padding-bottom: $padding-medium;
+  padding-block: $padding-medium;
   border-radius:  1em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 button:active {
   background-color: hsl(159, 37%, 18%);
   cursor:pointer;
@@ -104,6 +105,7 @@ button:active {
 
 .button-img {
   padding-right: $padding-medium;
+  width: 1em;
 }
 
 .attribution {
@@ -113,4 +115,190 @@ button:active {
 
 .attribution a {
   color: $color-link;
+}
+
+@media (min-width: 27em) {
+  body{
+    padding-block: calc(2vw);
+    padding-inline: calc(1.5vw);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 2.5em;
+  }
+
+  .card-text {
+    line-height: 1.5em;
+    font-size: 1.5em;
+  }
+
+  .discountprice {
+    font-size: 2.5em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  .button-img {
+    padding-right: $padding-medium;
+    width: 1em;
+  }
+}
+
+@media (min-width: 45em) {
+  body {
+    background: $color-background;
+    font: 100% $font-text;
+    font-weight:$font-weight-light;
+    color: $color-text;
+    padding-block: calc(2vw);
+    padding-inline: calc(6vw);
+  }
+
+ .card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-img {
+    content:url('images/image-product-desktop.jpg');
+    width: 50%;
+    border-top-right-radius: 0em;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
+
+  .card-description {
+    padding-block: $padding-medium;
+    padding-left: calc(2em);
+    padding-right: $padding-large;
+  }
+
+  .card-title {
+    font-size: 2.5em;
+  }
+
+  .card-text {
+    line-height: 1.5em;
+    font-size: 1.5em;
+  }
+
+  .discountprice {
+    font-size: 2.5em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  .button-img {
+    padding-right: $padding-medium;
+    width: 1em;
+  }
+}
+
+@media (min-width: 64em) {
+  body {
+    padding-block: calc(4vw);
+    padding-inline: calc(10vw);
+  }
+
+  .card-title {
+    font-size: 3em;
+  }
+
+  .card-text {
+    line-height: 1.5em;
+    font-size: 1.5em;
+  }
+
+  .discountprice {
+    font-size: 3em;
+  }
+
+  button {
+    font-size: 1.5em;
+  }
+
+  .button-img {
+    width: 1.5em;
+  }
+}
+
+@media (min-width: 90em) {
+  body {
+    padding-block: calc(6vw);
+    padding-inline: calc(12vw);
+  }
+
+  .card-title {
+    font-size: 4.5em;
+  }
+
+  .card-text {
+    line-height: 1.5em;
+    font-size: 2em;
+  }
+
+  .discountprice {
+    font-size: 4.5em;
+  }
+
+  button {
+    font-size: x-large;
+  }
+}
+
+@media (min-width: 126em) {
+  body {
+    padding-block: calc(8vw);
+    padding-inline: calc(18vw);
+  }
+
+  .card-title {
+    font-size: 5em;
+  }
+
+  .card-text {
+    line-height: 1.5em;
+    font-size: 2.5em;
+  }
+
+  .discountprice {
+    font-size: 5em;
+  }
+
+  button {
+    font-size: xx-large;
+  }
+}
+
+@media (min-width: 160em) {
+  body {
+    padding-block: calc(10vw);
+    padding-inline: calc(24vw);
+  }
+
+  .card-title {
+    font-size: 5em;
+  }
+
+  .card-text {
+    line-height: 1.5em;
+    font-size: 2.5em;
+  }
+
+  .discountprice {
+    font-size: 5em;
+  }
+
+  button {
+    font-size: xx-large;
+  }
 }
