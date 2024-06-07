@@ -29,6 +29,8 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Mary2021/product-preview-card-component](https://github.com/Mary2021/product-preview-card-component)
+- Live Site URL: [https://mary2021.github.io/product-preview-card-component/](https://mary2021.github.io/product-preview-card-component/)
+
 
 ## My process
 
