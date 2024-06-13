@@ -5,27 +5,20 @@ body {
   font: 100% "Montserrat", sans-serif;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
-  padding-block: 1em;
-  padding-inline: 0.5em;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   background: hsl(0, 0%, 100%);
   border-radius: 1em;
 }
 
-.card-img {
-  content: url("images/image-product-mobile.jpg");
+img {
   width: 100%;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  height: 100%;
 }
 
-.card-description {
-  padding-block: 1em;
-  padding-inline: 1.5em;
+.card-img {
+  border-top-left-radius: 1em;
 }
 
 .category {
@@ -99,152 +92,208 @@ button:active {
   color: hsl(158, 36%, 37%);
 }
 
-@media (min-width: 27em) {
+@media (orientation: portrait) {
   body {
-    padding-block: 2vw;
-    padding-inline: 1.5vw;
+    padding-block: 1em;
+    padding-inline: 0.5em;
   }
   .card {
     display: flex;
     flex-direction: column;
   }
-  .card-title {
-    font-size: 2.5em;
+  .card-img {
+    border-top-right-radius: 1em;
   }
-  .card-text {
-    line-height: 1.5em;
-    font-size: 1.5em;
-  }
-  .discountprice {
-    font-size: 2.5em;
-  }
-  button {
-    font-size: 1em;
-  }
-  .button-img {
-    padding-right: 1em;
-    width: 1em;
+  .product-description {
+    padding-block: 1em;
+    padding-inline: 1.5em;
   }
 }
-@media (min-width: 45em) {
+@media (orientation: landscape) {
   body {
-    background: hsl(30, 38%, 92%);
-    font: 100% "Montserrat", sans-serif;
-    font-weight: 500;
-    color: hsl(228, 12%, 48%);
-    padding-block: 2vw;
-    padding-inline: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1em;
+    padding-inline: 0.5em;
   }
   .card {
     display: flex;
     flex-direction: row;
+    width: 90%;
   }
   .card-img {
-    content: url("images/image-product-desktop.jpg");
-    width: 50%;
     border-top-right-radius: 0em;
-    border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
   }
-  .card-description {
+  .img-container {
+    width: 50%;
+  }
+  .product-description {
+    width: 50%;
     padding-block: 1em;
-    padding-left: 2em;
-    padding-right: 1.5em;
-  }
-  .card-title {
-    font-size: 2.5em;
-  }
-  .card-text {
-    line-height: 1.5em;
-    font-size: 1.5em;
-  }
-  .discountprice {
-    font-size: 2.5em;
-  }
-  button {
-    font-size: 1em;
-  }
-  .button-img {
-    padding-right: 1em;
-    width: 1em;
+    padding-inline: 1.5em;
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 48em) and (orientation: landscape) {
   body {
-    padding-block: 4vw;
-    padding-inline: 10vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .card-title {
-    font-size: 3em;
+  .card {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
   }
-  .card-text {
-    line-height: 1.5em;
-    font-size: 1.5em;
+  img {
+    width: 100%;
+    height: 100%;
   }
-  .discountprice {
-    font-size: 3em;
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: 1em;
   }
-  button {
-    font-size: 1.5em;
+  .img-container {
+    width: 50%;
   }
-  .button-img {
-    width: 1.5em;
+  .product-description {
+    width: 50%;
+  }
+}
+@media (min-width: 62em) and (orientation: landscape) {
+  body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: 1em;
+  }
+  .img-container {
+    width: 50%;
+  }
+  .product-description {
+    width: 50%;
+  }
+}
+@media (min-width: 75em) and (orientation: landscape) {
+  body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: 1em;
+  }
+  .img-container {
+    width: 50%;
+  }
+  .product-description {
+    width: 50%;
   }
 }
 @media (min-width: 90em) {
   body {
-    padding-block: 6vw;
-    padding-inline: 12vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: 1em;
+  }
+  .img-container {
+    width: 50%;
+  }
+  .product-description {
+    width: 50%;
   }
   .card-title {
-    font-size: 4.5em;
-  }
-  .card-text {
-    line-height: 1.5em;
-    font-size: 2em;
-  }
-  .discountprice {
-    font-size: 4.5em;
-  }
-  button {
-    font-size: x-large;
-  }
-}
-@media (min-width: 126em) {
-  body {
-    padding-block: 8vw;
-    padding-inline: 18vw;
-  }
-  .card-title {
-    font-size: 5em;
-  }
-  .card-text {
-    line-height: 1.5em;
     font-size: 2.5em;
   }
+  .card-text {
+    line-height: 1.5em;
+    font-size: 1.3em;
+  }
   .discountprice {
-    font-size: 5em;
+    font-size: 2.5em;
+  }
+  .price {
+    font-size: 0.6em;
   }
   button {
-    font-size: xx-large;
+    font-size: 1.2em;
+  }
+  .button-img {
+    width: 1.1em;
   }
 }
 @media (min-width: 160em) {
   body {
-    padding-block: 10vw;
-    padding-inline: 24vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+  }
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: 1em;
+  }
+  .img-container {
+    width: 50%;
+  }
+  .product-description {
+    width: 50%;
   }
   .card-title {
-    font-size: 5em;
+    font-size: 3.7em;
   }
   .card-text {
     line-height: 1.5em;
-    font-size: 2.5em;
+    font-size: 1.7em;
   }
   .discountprice {
-    font-size: 5em;
+    font-size: 3em;
+  }
+  .price {
+    font-size: 0.6em;
   }
   button {
-    font-size: xx-large;
+    font-size: 1.3em;
+  }
+  .button-img {
+    width: 1.2em;
   }
 }/*# sourceMappingURL=index.css.map */

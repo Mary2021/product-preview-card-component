@@ -23,27 +23,20 @@ body {
   font: 100% $font-text;
   font-weight:$font-weight-light;
   color: $color-text;
-  padding-block: $padding-medium;
-  padding-inline: $padding-small;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   background: $color-background-card;
-  border-radius: $border-radius;
+  border-radius: $border-radius
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 .card-img {
-  content:url('images/image-product-mobile.jpg');
-  width: 100%;
   border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-}
-
-.card-description {
-  padding-block: $padding-medium;
-  padding-inline: $padding-large;
 }
 
 .category {
@@ -51,7 +44,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
- 
+
 .card-title {
   font: 100% $font-title;
   font-weight:$font-weight-bold;
@@ -117,188 +110,250 @@ button:active {
   color: $color-link;
 }
 
-@media (min-width: 27em) {
-  body{
-    padding-block: calc(2vw);
-    padding-inline: calc(1.5vw);
+@media (orientation: portrait) {
+body {
+  padding-block: $padding-medium;
+  padding-inline: $padding-small;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  border-top-right-radius: $border-radius;
+}
+
+.product-description {
+  padding-block: $padding-medium;
+  padding-inline: $padding-large;
+}
+}
+
+@media (orientation: landscape) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: $padding-medium;
+    padding-inline: $padding-small;
   }
 
   .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 90%;
   }
 
-  .card-title {
-    font-size: 2.5em;
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: $border-radius;
   }
 
-  .card-text {
-    line-height: 1.5em;
-    font-size: 1.5em;
+  .img-container {
+    width:50%;
   }
 
-  .discountprice {
-    font-size: 2.5em;
-  }
-
-  button {
-    font-size: 1em;
-  }
-
-  .button-img {
-    padding-right: $padding-medium;
-    width: 1em;
+  .product-description {
+    width:50%;
+    padding-block: $padding-medium;
+    padding-inline: $padding-large;
   }
 }
 
-@media (min-width: 45em) {
+@media (min-width: 48em) and (orientation: landscape) {
   body {
-    background: $color-background;
-    font: 100% $font-text;
-    font-weight:$font-weight-light;
-    color: $color-text;
-    padding-block: calc(2vw);
-    padding-inline: calc(6vw);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
   }
 
- .card {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: $border-radius;
+  }
+
+  .img-container {
+    width:50%;
+  }
+
+  .product-description {
+    width:50%;
+  }
+}
+
+@media (min-width: 62em) and (orientation: landscape) {
+  body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 60%;
     display: flex;
     flex-direction: row;
   }
 
   .card-img {
-    content:url('images/image-product-desktop.jpg');
-    width: 50%;
     border-top-right-radius: 0em;
-    border-top-left-radius: $border-radius;
     border-bottom-left-radius: $border-radius;
   }
 
-  .card-description {
-    padding-block: $padding-medium;
-    padding-left: calc(2em);
-    padding-right: $padding-large;
+  .img-container {
+    width:50%;
   }
 
-  .card-title {
-    font-size: 2.5em;
-  }
-
-  .card-text {
-    line-height: 1.5em;
-    font-size: 1.5em;
-  }
-
-  .discountprice {
-    font-size: 2.5em;
-  }
-
-  button {
-    font-size: 1em;
-  }
-
-  .button-img {
-    padding-right: $padding-medium;
-    width: 1em;
+  .product-description {
+    width:50%;
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 75em) and (orientation: landscape) {
   body {
-    padding-block: calc(4vw);
-    padding-inline: calc(10vw);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
   }
 
-  .card-title {
-    font-size: 3em;
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: $border-radius;
   }
 
-  .card-text {
-    line-height: 1.5em;
-    font-size: 1.5em;
+  .img-container {
+    width:50%;
   }
 
-  .discountprice {
-    font-size: 3em;
-  }
-
-  button {
-    font-size: 1.5em;
-  }
-
-  .button-img {
-    width: 1.5em;
+  .product-description {
+    width:50%;
   }
 }
 
 @media (min-width: 90em) {
   body {
-    padding-block: calc(6vw);
-    padding-inline: calc(12vw);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: $border-radius;
+  }
+
+  .img-container {
+    width:50%;
+  }
+
+  .product-description {
+    width:50%;
   }
 
   .card-title {
-    font-size: 4.5em;
-  }
-
-  .card-text {
-    line-height: 1.5em;
-    font-size: 2em;
-  }
-
-  .discountprice {
-    font-size: 4.5em;
-  }
-
-  button {
-    font-size: x-large;
-  }
-}
-
-@media (min-width: 126em) {
-  body {
-    padding-block: calc(8vw);
-    padding-inline: calc(18vw);
-  }
-
-  .card-title {
-    font-size: 5em;
-  }
-
-  .card-text {
-    line-height: 1.5em;
     font-size: 2.5em;
   }
 
+  .card-text {
+    line-height: 1.5em;
+    font-size: 1.3em;
+  }
+
   .discountprice {
-    font-size: 5em;
+    font-size: 2.5em;
+  }
+
+  .price {
+    font-size: 0.6em;
   }
 
   button {
-    font-size: xx-large;
+    font-size: 1.2em;
+  }
+  
+  .button-img {
+    width: 1.1em;
   }
 }
 
 @media (min-width: 160em) {
   body {
-    padding-block: calc(10vw);
-    padding-inline: calc(24vw);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-img {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: $border-radius;
+  }
+
+  .img-container {
+    width:50%;
+  }
+
+  .product-description {
+    width:50%;
   }
 
   .card-title {
-    font-size: 5em;
+    font-size: 3.7em;
   }
 
   .card-text {
     line-height: 1.5em;
-    font-size: 2.5em;
+    font-size: 1.7em;
   }
 
   .discountprice {
-    font-size: 5em;
+    font-size: 3em;
+  }
+
+  .price {
+    font-size: 0.6em;
   }
 
   button {
-    font-size: xx-large;
+    font-size: 1.3em;
+  }
+  
+  .button-img {
+    width: 1.2em;
   }
 }
